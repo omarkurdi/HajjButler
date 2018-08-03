@@ -43,26 +43,24 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">
-           <asp:Label ID="Label5" runat="server" Text="repate password :"></asp:Label>
-                    </td>
+                        &nbsp;</td>
                     <td>
-            <asp:TextBox ID="txtPass02" runat="server" style="margin-left:10px;"></asp:TextBox>
-                    </td>
+                        &nbsp;</td>
                 </tr>
                
             </table>
             <div style="
                display: block;
     margin-left: auto;
-    margin-right: auto;" >
-            <asp:Button ID="btnLogin0" runat="server" Text="Login" style="display: block;
+    margin-right: auto; text-align:center;" >
+            <asp:Button ID="btnLogin" runat="server" Text="Login" style="display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;" OnClick="btnLogin0_Click" />
-            <asp:HyperLink ID="hlNewUser0" runat="server" style="
-    margin-left: 40%;
-    
-   " NavigateUrl="~/newUser.aspx">New User ?</asp:HyperLink>
+            <asp:HyperLink ID="hlNewUser0" runat="server" NavigateUrl="~/newUser.aspx">New User ?</asp:HyperLink>
+                <br />
+                <br />
+                <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
                 </div>
             
         </div>

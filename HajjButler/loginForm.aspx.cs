@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 namespace HajjButler
 {
@@ -16,6 +17,17 @@ namespace HajjButler
 
         protected void btnLogin0_Click(object sender, EventArgs e)
         {
+            SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=HajjButler2;Integrated Security=True");
+            string insertStatement = $@"select count(*) from users where name='{txtUser.Text}' and password = '{txtPass.Text}')";
+            conn.Open();
+            SqlCommand cmd = new SqlCommand(insertStatement, conn);
+            if (cmd.ExecuteScalar().ToString() != "0")
+                Response.Redirect("MainContent.aspx");
+            else
+            {
+                lblMessage.Text = "Failed";
+            }
+            conn.Close();
             Response.Redirect("MainContent.aspx");
         }
     }

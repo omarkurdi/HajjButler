@@ -37,7 +37,7 @@
                         <asp:Label ID="Label1" runat="server" Text="الاسم :"></asp:Label>
                     </td>
                     <td class="padding">
-                        <asp:TextBox ID="txtUser" runat="server" Width="250px" ></asp:TextBox>
+                        <asp:TextBox ID="txtUserName" runat="server" Width="250px" ></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -45,7 +45,7 @@
                         <asp:Label ID="Label2" runat="server" Text="الرقم السري :"></asp:Label>
                     </td>
                     <td class="padding">
-                        <asp:TextBox ID="txtPass" runat="server" Width="250px" ></asp:TextBox>
+                        <asp:TextBox ID="txtPass" runat="server" Width="250px" TextMode="Password" ></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -53,7 +53,7 @@
                         <asp:Label ID="Label3" runat="server" Text="تكرار الرقم السري :"></asp:Label>
                     </td>
                     <td class="padding">
-                        <asp:TextBox ID="txtPass02" runat="server" Width="250px" ></asp:TextBox>
+                        <asp:TextBox ID="txtPass02" runat="server" Width="250px" TextMode="Password" ></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -61,7 +61,7 @@
                         <asp:Label ID="Label4" runat="server" Text="اسم الحملة :"></asp:Label>
                     </td>
                     <td class="padding">
-                        <asp:TextBox ID="TextBox1" runat="server" Width="250px" ></asp:TextBox>
+                        <asp:TextBox ID="txtCampaign_name" runat="server" Width="250px" ></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -69,7 +69,7 @@
                         <asp:Label ID="Label5" runat="server" Text="رقم الحملة :"></asp:Label>
                     </td>
                     <td class="padding">
-                        <asp:TextBox ID="TextBox2" runat="server" Width="250px" ></asp:TextBox>
+                        <asp:TextBox ID="txtCampaign_id" runat="server" Width="250px" ></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -77,7 +77,7 @@
                         <asp:Label ID="Label6" runat="server" Text="اللغة :"></asp:Label>
                     </td>
                     <td class="padding">
-                        <asp:DropDownList ID="DropDownList1" runat="server" Width="250px">
+                        <asp:DropDownList ID="ddlLang" runat="server" Width="250px">
                             <asp:ListItem>عربي</asp:ListItem>
                             <asp:ListItem>English</asp:ListItem>
                             <asp:ListItem>Urdo</asp:ListItem>
@@ -94,7 +94,7 @@
                         <asp:Label ID="Label7" runat="server" Text="البلد :"></asp:Label>
                     </td>
                     <td class="padding">
-                        <asp:DropDownList ID="DropDownList2" runat="server" Width="250px">
+                        <asp:DropDownList ID="ddlcount" runat="server" Width="250px">
                             <asp:ListItem>Afghanistan</asp:ListItem>
                             <asp:ListItem>Albania</asp:ListItem>
                             <asp:ListItem>Algeria</asp:ListItem>
@@ -114,7 +114,7 @@
                         <asp:Label ID="Label8" runat="server" Text="الجنس :"></asp:Label>
                     </td>
                     <td class="padding">
-                        <asp:DropDownList ID="DropDownList3" runat="server" Width="250px">
+                        <asp:DropDownList ID="ddlGender" runat="server" Width="250px">
                             <asp:ListItem>ذكر</asp:ListItem>
                             <asp:ListItem>انثى</asp:ListItem>
                         </asp:DropDownList>
@@ -125,7 +125,7 @@
                         <asp:Label ID="Label9" runat="server" Text="رقم الحدود :"></asp:Label>
                     </td>
                     <td class="padding">
-                        <asp:TextBox ID="TextBox6" runat="server" Width="250px" ></asp:TextBox>
+                        <asp:TextBox ID="txtBorder_id" runat="server" Width="250px" ></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -133,14 +133,16 @@
                         <asp:Label ID="Label10" runat="server" Text="رقم الجوال :"></asp:Label>
                     </td>
                     <td class="padding">
-                        <asp:TextBox ID="TextBox7" runat="server" Width="250px" ></asp:TextBox>
+                        <asp:TextBox ID="txtMobile_number" runat="server" Width="250px" ></asp:TextBox>
                     </td>
                 </tr>
 
             </table>
-            <div style="margin-top: 20px;">
+            <div style="margin-top: 20px;text-align:center;">
                 <asp:Button ID="btnRegister" runat="server" Text="تسجيل" Style="display: block; margin-left: auto; margin-right: auto; width: 50%;"
                     OnClick="btnRegister_Click" />
+                <br />
+                <asp:Label ID="lblMessage" runat="server" Text="" ForeColor="Black" style="text-align:center;"></asp:Label>
             </div>
 
         </div>

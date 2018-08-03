@@ -36,29 +36,33 @@
 <body>
     <form id="form1" runat="server">
          <div class="mainDiv">
+             <div style=" align-content:center; align-items:center;">
+             <asp:Button ID="btnSearch" runat="server" Text="بحث" style=" width:100px; margin-left:400px;" />
+                              </div>
             <div class="container" >
                 <div>
                     <img src="Images/if__wheelchair2_2324166.png" alt="Alternate Text" class="imgClass" />
                 </div>
-                <div>ماء</div>
+                <div><asp:CheckBox ID="chkSN" runat="server" Text="احتياجات خاصة" TextAlign="Left" /></div>
+                
             </div>
             <div class="container" >
                 <div>
                     <img src="Images/if_aiga_nursery_134173.png" alt="Alternate Text" class="imgClass" />
                 </div>
-                <div id="demo">طعام</div>
+                <div id="demo"><asp:CheckBox ID="chkBaby" runat="server" Text="اطفال" TextAlign="Left" /></div>
             </div>
             <div class="container">
                 <div>
                     <img src="Images/if_aiga_toilet_women_134196.png" alt="Alternate Text" class="imgClass" />
                 </div>
-                <div>اسعاف</div>
+                <div><asp:CheckBox ID="chkFemale" runat="server" Text="نساء" TextAlign="Left" /></div>
             </div>
             <div class="container">
                 <div>
                     <img src="Images/if_aiga_toilet_men_134163 (1).png" alt="Alternate Text" class="imgClass" />
                 </div>
-                <div>دورات مياه</div>
+                <div><asp:CheckBox ID="chkmale" runat="server" Text="رجال" TextAlign="Left" /></div>
             </div>
            
         </div>

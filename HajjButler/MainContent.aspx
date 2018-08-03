@@ -39,25 +39,25 @@
 <body>
     <form id="form1" runat="server" style="align-content: center;">
         <div class="mainDiv">
-            <div class="container" onclick="location.href='drink.aspx';"">
+            <div class="container" onclick="location.href='drink.aspx';">
                 <div>
                     <img src="Images/drinking_icon.jpg" alt="Alternate Text" class="imgClass" />
                 </div>
                 <div>ماء</div>
             </div>
-            <div class="container">
+            <div class="container" onclick="location.href='food.aspx';">
                 <div>
                     <img src="Images/food_icon.jpg" alt="Alternate Text" class="imgClass" />
                 </div>
                 <div id="demo">طعام</div>
             </div>
-            <div class="container">
+            <div class="container"onclick="location.href='emergency.aspx';">
                 <div>
                     <img src="Images/health_icon.jpg" alt="Alternate Text" class="imgClass" />
                 </div>
                 <div>اسعاف</div>
             </div>
-            <div class="container">
+            <div class="container" onclick="location.href='bathrom.aspx';">
                 <div>
                     <img src="Images/toilet_icon.jpg" alt="Alternate Text" class="imgClass" />
                 </div>

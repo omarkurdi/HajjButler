@@ -134,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="bathrom.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -141,6 +142,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="emergency.aspx" />
+    <Content Include="food.aspx" />
     <Content Include="drink.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -164,6 +167,11 @@
     <Content Include="Images\free_water_icon.jpg" />
     <Content Include="Images\free_wifi.jpg" />
     <Content Include="Images\health_icon.jpg" />
+    <Content Include="Images\hospital_location.jpg" />
+    <Content Include="Images\if_aiga_nursery_134173.png" />
+    <Content Include="Images\if_aiga_toilet_men_134163 %281%29.png" />
+    <Content Include="Images\if_aiga_toilet_women_134196.png" />
+    <Content Include="Images\if__wheelchair2_2324166.png" />
     <Content Include="Images\lost_icon.jpg" />
     <Content Include="Images\main.jpg" />
     <Content Include="Images\manask_icon.jpg" />
@@ -221,6 +229,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="bathrom.aspx.cs">
+      <DependentUpon>bathrom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bathrom.aspx.designer.cs">
+      <DependentUpon>bathrom.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -234,6 +249,20 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="emergency.aspx.cs">
+      <DependentUpon>emergency.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="emergency.aspx.designer.cs">
+      <DependentUpon>emergency.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="food.aspx.cs">
+      <DependentUpon>food.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="food.aspx.designer.cs">
+      <DependentUpon>food.aspx</DependentUpon>
     </Compile>
     <Compile Include="drink.aspx.cs">
       <DependentUpon>drink.aspx</DependentUpon>
